@@ -1,4 +1,4 @@
-import { Sequelize } from "sequelize";
+import { Sequelize, DataTypes } from "sequelize";
 
 const db = new Sequelize({
     dialect: "mysql",
@@ -9,4 +9,4 @@ const db = new Sequelize({
     port: 3306,
 });
 
-export default db
+export default {db, DataTypes}
